@@ -1,0 +1,77 @@
+[ {
+  "id" : "bf4d5d70-d7a2-bb98-af0e-0f3998f86c8d",
+  "name" : "members",
+  "display_width" : null,
+  "label" : "Members",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "57f9cb36-e40e-79e5-4e45-bb034badfae0",
+    "name" : "member_name",
+    "display_width" : null,
+    "label" : "Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Member 1"
+  }, {
+    "id" : "300da3c7-2888-f557-f635-c8ed6850e2cf",
+    "name" : "position",
+    "display_width" : null,
+    "label" : "Position",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "CEO"
+  }, {
+    "id" : "037cc6e2-3da5-f0fb-1560-17c7a888f94e",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://26595626.fs1.hubspotusercontent-eu1.net/hubfs/26595626/ico-person.png",
+      "alt" : "ico-person",
+      "loading" : "lazy",
+      "width" : 71,
+      "height" : 80,
+      "max_width" : 71,
+      "max_height" : 80
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "position" : "CEO",
+    "member_name" : "Member 1",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://26595626.fs1.hubspotusercontent-eu1.net/hubfs/26595626/ico-person.png",
+      "alt" : "ico-person",
+      "loading" : "lazy",
+      "width" : 71,
+      "height" : 80,
+      "max_width" : 71,
+      "max_height" : 80
+    }
+  } ]
+} ]

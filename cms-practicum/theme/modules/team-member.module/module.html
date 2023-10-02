@@ -1,0 +1,30 @@
+<div class="cols">
+  {% for item in module.members %}
+    <div class="col--1of4">
+      <div class="card">
+        <figure>
+          	{% if item.image_field.src %}
+              {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+              {% if item.image_field.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif item.image_field.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+               {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+              <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+        </figure>
+
+        <div class="card__entry">
+          <h3>{{ item.member_name }}</h3>
+
+          <p>{{ item.position }}</p>
+        </div><!-- /.card__entry -->
+      </div><!-- /.card -->
+    </div><!-- /.col-/-1of2 -->
+  {% endfor %}
+</div><!-- /.cols -->
+
+
+
+

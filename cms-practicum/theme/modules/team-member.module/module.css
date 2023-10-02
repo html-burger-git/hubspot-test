@@ -1,0 +1,5 @@
+.card { background-color: #222; border: 1px solid #222; color: #fff; }
+.card figure { padding: 0; margin: 0; }
+.card img { object-fit: cover; object-position: center; width: 100%; height: 100%; }
+
+.card .card__entry { padding: 10px 20px; }
